@@ -2,7 +2,7 @@ let ingredientsElem = document.querySelectorAll(".message li");
 
 for(let i = 0; i < ingredientsElem.length; i++){
     console.log(ingredientsElem[i].textContent);
-    if (i%2 == 0){
+    if (isEven(i)){
         ingredientsElem[i].style.color = "purple";
         ingredientsElem[i].style.fontSize = "1.1rem";
         ingredientsElem[i].style.listStyleType = "circle";
@@ -15,4 +15,9 @@ for(let i = 0; i < ingredientsElem.length; i++){
     
 }
 
-
+function isEven(value){
+    if (value%2 == 0)
+        return true;
+    else
+        return false;
+}
