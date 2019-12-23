@@ -8,18 +8,24 @@
 //document.querySelector("li:nth-child(6)").style.color = "#00006f";
 //document.querySelector("li:nth-child(7)").style.color = "#000027";
 
-let elemByTagName = document.getElementsByTagName("li");
-console.log(elemByTagName);
-console.log(elemByTagName[1].textContent);
-console.log(elemByTagName[2].textContent);
-console.log(elemByTagName[3].textContent);
-elemByTagName[0].style.color = "#a9a9ff";
-elemByTagName[1].style.color = "#0d0dff";
-elemByTagName[2].style.color = "#00006f";
+//let elemByTagName = document.getElementsByTagName("li");
+//console.log(elemByTagName);
+//console.log(elemByTagName[1].textContent);
+//console.log(elemByTagName[2].textContent);
+//console.log(elemByTagName[3].textContent);
+//elemByTagName[0].style.color = "#a9a9ff";
+//elemByTagName[1].style.color = "#0d0dff";
+//elemByTagName[2].style.color = "#00006f";
 
 
+// forEach loop
+let nodes = document.querySelectorAll(".message li");
+//console.log(document.querySelectorAll(".message li"));
+nodes.forEach(function(item,index){console.log("current item "+ item.textContent + "on index: " + index) });
+//nodes.forEach(function(el,index){console.log(el);console.log(index);el.innerHTML = "hello world"});
 
 
+// for loop
 //let ingredientsElem = document.querySelectorAll(".message li");
 //
 //for(let i = 0; i < ingredientsElem.length; i++){
